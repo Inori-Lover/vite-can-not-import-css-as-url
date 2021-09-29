@@ -1,20 +1,22 @@
 <script setup>
-  import fileImportResult from './HelloWorld.css'
-  import fileWithURLImportResult from './HelloWorld.css?url'
+  // import justImportCSS from './test.css'
+  import importCSSAsURL from './test.css?url'
+  // import justImportJS from './test.js'
+  import importJSAsURL from './test.js?url'
+  // import justImportImg from './test.png'
+  import importImgAsURL from './test.png?url'
 </script>
 
 <template>
-  expect: '<code>/path/to/file.css</code>'
+  expect: '<code>/path/to/file.ext</code>'
   <br />
   <br />
-  use <code>import fileImportResult from './HelloWorld.css'</code> :
-  <br />
-  <code>{{ fileImportResult }}</code>
+  <code>{{ importCSSAsURL }}</code>
   <br />
   <br />
-  use <code>import fileWithURLImportResult from './HelloWorld.css?url'</code> :
+  <code>{{ importJSAsURL }}</code>
   <br />
-  <code>{{ fileWithURLImportResult }}</code>
   <br />
+  <code>{{ importImgAsURL }}</code>
 </template>
 

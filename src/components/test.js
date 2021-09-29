@@ -1,0 +1,1 @@
+console.log('i-should-be-import-as-url')
