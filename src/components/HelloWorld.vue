@@ -3,8 +3,10 @@
   import importCSSAsURL from './test.css?url'
   // import justImportJS from './test.js'
   import importJSAsURL from './test.js?url'
-  // import justImportImg from './test.png'
-  import importImgAsURL from './test.png?url'
+  // import justImportPNG from './test.png'
+  import importPNGAsURL from './test.png?url'
+  // import justImportSvg from './test.svg'
+  import importSvgAsURL from './test.svg?url'
 </script>
 
 <template>
@@ -17,6 +19,9 @@
   <code>{{ importJSAsURL }}</code>
   <br />
   <br />
-  <code>{{ importImgAsURL }}</code>
+  <code>{{ importPNGAsURL }}</code>
+  <br />
+  <br />
+  <code>{{ importSvgAsURL }}</code>
 </template>
 
